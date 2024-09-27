@@ -36,7 +36,7 @@ book_id = input("Enter the book ID: ")
 due_date = input("Enter the due date (YYYY-MM-DD): ")
 return_date = input("Enter the return date (YYYY-MM-DD): ")
 
-# Calculate the fine
+
 result = calculate_fine(book_id, due_date, return_date)
 
 
