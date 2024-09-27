@@ -18,6 +18,6 @@ print("Final sorted list:")
 for name in unique_names:
     print(name)
 
-# Count and print the total number of names
+#  print the total number of names
 total_names = len(unique_names)
 print("Total number of names:", total_names)
