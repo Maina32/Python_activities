@@ -10,7 +10,7 @@ def calculate_fine(book_id, due_date, return_date):
   # Calculate the days overdue
   days_overdue = (return_date - due_date).days
 
-  # Determine the fine rate based on the days overdue
+ 
   if days_overdue <= 7:
     fine_rate = 20
   elif days_overdue <= 14:
@@ -18,10 +18,10 @@ def calculate_fine(book_id, due_date, return_date):
   else:
     fine_rate = 100
 
-  # Calculate the fine amount
+  
   fine_amount = days_overdue * fine_rate
 
-  # Return the results as a dictionary
+  
   return {
     "book_id": book_id,
     "due_date": due_date.strftime("%Y-%m-%d"),
@@ -31,7 +31,7 @@ def calculate_fine(book_id, due_date, return_date):
     "fine_amount": fine_amount
   }
 
-# Get user input
+
 book_id = input("Enter the book ID: ")
 due_date = input("Enter the due date (YYYY-MM-DD): ")
 return_date = input("Enter the return date (YYYY-MM-DD): ")
@@ -39,7 +39,7 @@ return_date = input("Enter the return date (YYYY-MM-DD): ")
 # Calculate the fine
 result = calculate_fine(book_id, due_date, return_date)
 
-# Display the results
+
 print("Book ID:", result["book_id"])
 print("Due Date:", result["due_date"])
 print("Return Date:", result["return_date"])
