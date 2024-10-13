@@ -13,6 +13,5 @@ def get_grade(score):
     else:
         return 'F'
 
-# Example usage
 score = 75
 print(f"The grade for a score of {score} is: {get_grade(score)}")
